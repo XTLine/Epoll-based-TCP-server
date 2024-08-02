@@ -1,0 +1,28 @@
+
+{
+    "version": "2.0.0",   // 使用的 tasks.json 版本
+
+    "tasks": [   // 配置任务列表
+        {
+            "label": "CMake Configure",   // 任务的标签，用于在 Visual Studio Code 中显示
+            "type": "shell",   // 任务类型为 shell 命令
+            "command": "cmake",   // 要执行的命令
+            "args": ["${workspaceFolder}"],   // 命令的参数，这里是配置 CMake
+            "group": {   // 任务分组信息
+                "kind": "build",   // 将任务分组为构建类型
+                "isDefault": true   // 设置为默认任务
+            }
+        },
+        {
+            "label": "CMake Build",   // 任务的标签
+            "type": "shell",   // 任务类型为 shell 命令
+            "command": "cmake",   // 要执行的命令
+            "args": ["--build", "${workspaceFolder}/build"],   // 命令的参数，这里是构建 CMake
+            "group": {   // 任务分组信息
+                "kind": "build",   // 将任务分组为构建类型
+                "isDefault": true   // 设置为默认任务
+            }
+        }
+    ]
+}
+

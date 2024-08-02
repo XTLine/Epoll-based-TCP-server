@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",   // 使用的 launch.json 版本
+
+    "configurations": [   // 配置调试器的配置列表
+        {
+            "name": "C++ Debug with lldb",   // 调试器配置的名称，可以自定义
+            "type": "cppdbg",   // 调试器类型为 C++ 调试
+            "request": "launch",   // 请求启动调试会话
+            "program": "${workspaceFolder}/build/reactor_server",   // 可执行文件的路径，主要的修改点
+
+            // 程序启动时的参数
+            "args": [],
+
+            "stopAtEntry": false,   // 是否在程序入口处停止
+
+            "cwd": "${workspaceFolder}",   // 工作目录
+            "environment": [],   // 环境变量设置
+            "externalConsole": false,   // 是否使用外部控制台
+
+            // 使用 lldb 调试器，如果使用gdb调试，换成gdb
+            "MIMode": "gdb",
+
+            // 配置 lldb 的初始化命令，启用漂亮打印
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for lldb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+
+            // 在启动调试会话之前运行的任务（在 tasks.json 中配置）
+            "preLaunchTask": "CMake Build",
+
+            // lldb-mi 调试器的路径，如果使用gdb调试，换成gdb的路径
+            "miDebuggerPath": "/usr/sbin/gdb"
+        }
+    ]
+}

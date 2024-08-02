@@ -1,0 +1,3 @@
+/home/XTline/TCP_serve/build/CMakeFiles/reactor_server.dir
+/home/XTline/TCP_serve/build/CMakeFiles/edit_cache.dir
+/home/XTline/TCP_serve/build/CMakeFiles/rebuild_cache.dir

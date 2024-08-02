@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/XTline/TCP_serve/build",
+  "command": "/usr/sbin/c++  -I/home/XTline/TCP_serve/include -g -o CMakeFiles/reactor_server.dir/main.cpp.o -c /home/XTline/TCP_serve/main.cpp",
+  "file": "/home/XTline/TCP_serve/main.cpp",
+  "output": "CMakeFiles/reactor_server.dir/main.cpp.o"
+},
+{
+  "directory": "/home/XTline/TCP_serve/build",
+  "command": "/usr/sbin/c++  -I/home/XTline/TCP_serve/include -g -o CMakeFiles/reactor_server.dir/reactor_server.cpp.o -c /home/XTline/TCP_serve/reactor_server.cpp",
+  "file": "/home/XTline/TCP_serve/reactor_server.cpp",
+  "output": "CMakeFiles/reactor_server.dir/reactor_server.cpp.o"
+}
+]
